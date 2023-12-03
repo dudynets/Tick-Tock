@@ -1,0 +1,22 @@
+{
+  "name": "tick-tock",
+  "version": "1.0.0",
+  "description": "An app that is good in one thing: Ticking and Tocking.",
+  "author": "Oleksandr Dudynets <hello@dudynets.dev>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prettier": "prettier --write \"**/*.{html,scss,ts,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-pwa": "^0.17.2"
+  }
+}

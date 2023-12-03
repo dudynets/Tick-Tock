@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tick-Tock</title>
+    <meta name="description" content="An app that is good in one thing: Ticking and Tocking." />
+    <meta name="description" content="An app that is good in one thing: Ticking and Tocking.">
+    <meta property="og:title" content="Tick-Tock">
+    <meta property="og:description" content="An app that is good in one thing: Ticking and Tocking.">
+    <meta property="og:site_name" content="Tick-Tock">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tick.dudynets.dev">
+    <meta property="og:image" content="favicons/og-image.png">
+    <link rel="icon" type="image/png" href="/favicons/tick-tock.png" />
+    <link rel="apple-touch-icon" href="/favicons/tick-tock.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="/src/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </noscript>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="clock">
+        <div class="clock__vertical-text">
+          <div class="clock__vertical-text-item">T</div>
+          <div class="clock__vertical-text-item">&nbsp;</div>
+          <div class="clock__vertical-text-item">C</div>
+          <div class="clock__vertical-text-item">K</div>
+        </div>
+
+        <div class="clock__wheel" style="--active-index: 0">
+          <div
+            class="clock__wheel-item clock__wheel-item--active"
+            data-index="0"
+            style="--index: 0"
+          >
+            I
+          </div>
+          <div class="clock__wheel-item" data-index="1" style="--index: 1">O</div>
+          <div class="clock__wheel-item" data-index="2" style="--index: 2">I</div>
+          <div class="clock__wheel-item" data-index="3" style="--index: 3">O</div>
+          <div class="clock__wheel-item" data-index="4" style="--index: 4">I</div>
+          <div class="clock__wheel-item" data-index="5" style="--index: 5">O</div>
+          <div class="clock__wheel-item" data-index="6" style="--index: 6">I</div>
+          <div class="clock__wheel-item" data-index="7" style="--index: 7">O</div>
+          <div class="clock__wheel-item" data-index="8" style="--index: 8">I</div>
+          <div class="clock__wheel-item" data-index="9" style="--index: 9">O</div>
+          <div class="clock__wheel-item" data-index="10" style="--index: 10">I</div>
+          <div class="clock__wheel-item" data-index="11" style="--index: 11">O</div>
+          <div class="clock__wheel-item" data-index="12" style="--index: 12">I</div>
+          <div class="clock__wheel-item" data-index="13" style="--index: 13">O</div>
+          <div class="clock__wheel-item" data-index="14" style="--index: 14">I</div>
+          <div class="clock__wheel-item" data-index="15" style="--index: 15">O</div>
+        </div>
+      </div>
+
+      <button class="sound-effects-button" title="Enable sound effects">
+        <img
+          width="28px"
+          height="28px"
+          class="sound-effects-button__icon"
+          src="/icons/mute.svg"
+          alt="Mute icon"
+        />
+        <span class="sound-effects-button__text">Sound disabled</span>
+      </button>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
